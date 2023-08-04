@@ -6,30 +6,36 @@
     <title>Document</title>
     <style>
       .container {
+        margin: 0 auto;
         width: 80%;
-        height: 400px;
+        height: 200px;
         background-color: antiquewhite;
         border: 2px solid black;
         display: flex;
+        justify-content: baseline;
       }
       .container div {
         border: 2px solid tomato;
-        flex: 1;
-        margin: 15px;
+        width: 125px;
+        height: 125px;
       }
       .uno {
         background-color: aqua;
       }
       div.dos {
         background-color: blueviolet;
-        flex: 2;
       }
       .tres {
         background-color: chartreuse;
       }
+      h1 {
+        text-align: center;
+      }
     </style>
   </head>
+
   <body>
+    <h1>justify-content: space-evenly</h1>
     <div class="container">
       <div class="uno">Uno</div>
       <div class="dos">Dos</div>

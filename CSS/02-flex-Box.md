@@ -195,6 +195,7 @@ Ahora a la caja del medio le daremos flex:2 , de manera que esa ocupará el dobl
 Este es el resultado:
 ![Alt text](../img/image9.png)
 Dejo casos de como podría configurarse el shorthand flex:
+
 ```CSS
 /* Keyword values */
 flex: auto;
@@ -227,3 +228,33 @@ flex: revert-layer;
 flex: unset;
 
 ```
+
+## _Flex-direction_
+
+Por defecto el valor el row, en el mismo el eje principal es el horizontal, por eso acá flex-basis determina el width.
+Si lo cambiamos a column, las cajas de disponen verticalmente, siendo el eje vertical el eje principal, en este caso el flex-basis determina el heigth, ya que flex-basis determina el tamaño en referencia al eje principal.
+
+```CSS
+.container{
+  flex-direction: column;
+  flex-direction: row,
+}
+```
+
+## _Alineación_
+
+### _Aling-items_: 
+se usa para alinear en el eje secundario a los items, el más usado es center.
+
+### _Justify-content_: da el alineamiento en el eje principal.
+
+![Alt text](../img/image10.png)
+
+![Alt text](../img/image11.png)
+
+![Alt text](../img/image12.png)
+
+![Alt text](../img/image13.png)
+
+Estos son algunas opciones, tambien se puede usar, left, rigth, flex-start, flex-end, baseline.
+
