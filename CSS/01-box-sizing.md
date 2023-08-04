@@ -2,7 +2,7 @@
 
 ### Hay dos opciones, content-box y border-box. Dependiendo cual usemos cambiará el tamaño final de la caja, teniendo en cuenta el padding y el border. A continuación dejo dos ejemplos, caja1 es content-box, y caja2 border-box
 
-![Alt text](../img/image.png)
+![Alt text](../img/boxSizing/image.png)
 
 ## 1) Box-sizing: content-box:
 
@@ -23,7 +23,7 @@ El código css es el siguiente:
 
 El resultado:
 
-![Alt text](../img/image2.png)
+![Alt text](../img//boxSizing/image2.png)
 
 _Como se ve en este caso, el tamaño total de la caja contiene en su interior padding y border. La altura es 120 de div + 60 de padding + 10 de border, lo que da un total de 190px. El mismo procedimiento es válido para calcular el ancho que ocupa la caja._
 
@@ -46,7 +46,7 @@ El código css es el siguiente:
 
 El resultado:
 
-![Alt text](../img/image3.png)
+![Alt text](../img//boxSizing/image3.png)
 
 _En el caso este, se ve claramante como se reduce el tamaño del div para respetar el whith y el height indicado. 120 - 60 - 10 = 50px de caja._
 

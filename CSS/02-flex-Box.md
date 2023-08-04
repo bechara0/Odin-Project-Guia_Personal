@@ -23,7 +23,7 @@ Veamos este ejemplo:
 
 En el navegador se observa lo siguiente:
 
-![Alt text](../img/image4.png)
+![Alt text](../img/flexBox/image4.png)
 
 Pero si agregamos la propiedad flex:
 
@@ -43,7 +43,7 @@ Pero si agregamos la propiedad flex:
 
 Las cajas se ordenarán horizontalmente, y ocuparan todo el ancho disponible.
 
-![Alt text](../img/image5.png)
+![Alt text](../img/flexBox/image5.png)
 
 Existe el contenedor con la propiedad flex, que dentro tiene los denominados items. A la vez una caja puede ser items y contenedor a la vez, por ejemplo:
 
@@ -88,7 +88,7 @@ Existe el contenedor con la propiedad flex, que dentro tiene los denominados ite
 
 El resultado es:
 
-![Alt text](../img/image6.png)
+![Alt text](../img/flexBox/image6.png)
 
 Como se puede ver hay un div contenedor que contiene 3 items acomodados por display flex. Al mismo tiempo la caja del medio es contenedor flex de tres items más.
 
@@ -130,7 +130,7 @@ El shorthand "flex", contiene 3 propiedades, si coloco en css flex: 1; estoy ind
 ```
 
 El resultado de este código es el siguiente:
-![Alt text](../img/image7.png)
+![Alt text](../img/flexBox/image7.png)
 
 Ahora para ordenar colocamos flex: 1 a los contenedores hijos, tambien les di un marging para que dejen espacio entre ellos y sea mas visible el cambio.
 
@@ -160,7 +160,7 @@ Ahora para ordenar colocamos flex: 1 a los contenedores hijos, tambien les di un
     </style>
 ```
 
-![Alt text](../img/image8.png)
+![Alt text](../img/flexBox/image8.png)
 
 Está mas que claro como hemos implementado las tres propiedades, si cambiamos la resolución, vemos como varian las proporciones de las cajas en todas por igual.
 Ahora a la caja del medio le daremos flex:2 , de manera que esa ocupará el doble de espacio que las otras dos.
@@ -193,7 +193,7 @@ Ahora a la caja del medio le daremos flex:2 , de manera que esa ocupará el dobl
 ```
 
 Este es el resultado:
-![Alt text](../img/image9.png)
+![Alt text](../img/flexBox/image9.png)
 Dejo casos de como podría configurarse el shorthand flex:
 
 ```CSS
@@ -243,18 +243,26 @@ Si lo cambiamos a column, las cajas de disponen verticalmente, siendo el eje ver
 
 ## _Alineación_
 
-### _Aling-items_: 
-se usa para alinear en el eje secundario a los items, el más usado es center.
+### _Aling-items_:
+
+se usa para alinear en el eje secundario a los items, el más usado es center. Pero esta strech (llena el espacio disponible), flex-start, flex-end, center, baseline (Similar a fplex-start, pero tambien deja centrado el "centro" de las cajas, esto se nota cuando los items tienen distintos heigth)
 
 ### _Justify-content_: da el alineamiento en el eje principal.
 
-![Alt text](../img/image10.png)
+![Alt text](../img/flexBox/image10.png)
 
-![Alt text](../img/image11.png)
+![Alt text](../img/flexBox/image11.png)
 
-![Alt text](../img/image12.png)
+![Alt text](../img/flexBox/image12.png)
 
-![Alt text](../img/image13.png)
+![Alt text](../img/flexBox/image13.png)
 
 Estos son algunas opciones, tambien se puede usar, left, rigth, flex-start, flex-end, baseline.
+
+## _aling-sef_: 
+Es similar a aling-items, pero la diferencia es que se aplica a un child, no al contenedor.
+
+## _GAP_:
+
+El gap es en flex box similar al marging, determina espacio entre items
 
